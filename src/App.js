@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import { PushToTalkButton, PushToTalkButtonContainer} from '@speechly/react-ui';
+import { PushToTalkButton, PushToTalkButtonContainer, ErrorPanel } from '@speechly/react-ui';
 
 import Main from './components/Main/Main';
 import Details from './components/Details/Details';
@@ -30,6 +30,7 @@ const App = () => {
       </Grid>
       <PushToTalkButtonContainer>
         <PushToTalkButton />
+        <ErrorPanel />
       </PushToTalkButtonContainer>
     </div>
   );
