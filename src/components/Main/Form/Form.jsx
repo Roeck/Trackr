@@ -50,6 +50,7 @@ const Form = () => {
       }
 
       segment.entities.forEach((e) => {
+        const category = `${e.value.chartAt(0)}${s.value.slice(1).toLowerCase()}`;
         switch (e.type) {
           case 'amount':
             setFormData({ ...formData, amount: e.value });
