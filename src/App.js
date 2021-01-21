@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 
 import { SpeechState, useSpeechContext } from "@speechly/react-client";
 import { PushToTalkButton, PushToTalkButtonContainer } from '@speechly/react-ui';
@@ -39,6 +39,11 @@ const App = () => {
           <PushToTalkButton />
         </PushToTalkButtonContainer>
       </Grid>
+      <div className={classes.footer}>
+					<Typography variant="body1" component="h2">
+						<br /><br /><a className={classes.link} href="https://github.com/Roeck"> 2021 @ Roeck</a> 
+					</Typography>
+				</div>
     </div>
   );
 };
