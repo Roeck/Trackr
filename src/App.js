@@ -41,7 +41,8 @@ const App = () => {
       </Grid>
       <div className={classes.footer}>
 					<Typography variant="body1" component="h2">
-						<br /><br /><a className={classes.link} href="https://github.com/Roeck"> 2021 @ Roeck</a> 
+						<br /><br />
+            <a className={classes.link} href="https://github.com/Roeck/Trackr">&copy; {(new Date().getFullYear())} Trackr</a> 
 					</Typography>
 				</div>
     </div>
